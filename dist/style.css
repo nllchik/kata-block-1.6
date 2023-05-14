@@ -418,7 +418,9 @@ template {
     left: -17px; }
   .services .about__image {
     max-width: 320px;
-    height: auto;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
     border-radius: 10px; }
 
 @media (min-width: 768px) {
@@ -452,6 +454,8 @@ template {
     padding-bottom: 40px; }
     .services__title {
       margin-top: 42px; }
+    .services__btn-shape svg {
+      transform: translateY(50%); }
     .services__button {
       display: flex;
       align-items: center;
@@ -1077,7 +1081,7 @@ template {
     letter-spacing: -0.6px;
     font-weight: bold;
     transition: 0.2s; }
-    .burger-footer__phone :hover {
+    .burger-footer__phone:hover {
       color: #ff3e79; }
   .burger-footer__languages .languages__label {
     margin-right: 7px;
