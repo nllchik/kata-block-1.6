@@ -116,7 +116,7 @@
     letter-spacing: -0.6px;
     font-weight: bold;
     transition: 0.2s;
-    :hover {
+    &:hover {
       color: $pink;
     }
   }

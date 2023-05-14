@@ -157,7 +157,7 @@
 
   .about__image {
     max-width: 320px;
-    height: auto;
+    height: min-content;
     border-radius: 10px;
   }
 }
@@ -208,6 +208,12 @@
     padding-bottom: 40px;
     &__title {
       margin-top: 42px;
+    }
+
+    &__btn-shape {
+      svg {
+        transform: translateY(50%);
+      }
     }
 
     &__button {
