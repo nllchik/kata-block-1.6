@@ -73,15 +73,15 @@
 
   &__item {
     display: inline-block;
-    box-sizing: border-box;
     margin-left: 15px;
     padding: 8px 9px;
     height: 40px;
     margin-bottom: 10px;
+    transition: color 0.5s;
 
     &:hover:not(.services__item--active) {
       border-bottom: 2px solid $light-pink;
-      border-radius: 10px;
+      color: $pink;
     }
 
     &--active {
@@ -90,7 +90,7 @@
     }
   }
 
-  &__links {
+  &__link {
     text-decoration: none;
     color: $gray;
     line-height: 24px;
