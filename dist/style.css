@@ -360,18 +360,18 @@ template {
       height: 0; }
   .services__item {
     display: inline-block;
-    box-sizing: border-box;
     margin-left: 15px;
     padding: 8px 9px;
     height: 40px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    transition: color 0.5s; }
     .services__item:hover:not(.services__item--active) {
       border-bottom: 2px solid #ffe0e9;
-      border-radius: 10px; }
+      color: #ff3e79; }
     .services__item--active {
       border: 2px solid #b8ffec;
       border-radius: 6px; }
-  .services__links {
+  .services__link {
     text-decoration: none;
     color: #7e7e82;
     line-height: 24px;
