@@ -376,44 +376,44 @@ template {
   .services__link {
     text-decoration: none;
     color: #7e7e82;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: -0.2px; }
-  .services__about {
+  .services .about {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .services .about__post {
-    margin: 0 16px; }
-  .services .about__text {
-    font-size: 14px;
-    line-height: 20px;
-    height: 95px;
-    overflow: hidden;
-    margin-bottom: 16px; }
-    .services .about__text p {
-      margin-bottom: 16px; }
-  .services .about__text--read-more {
-    height: 260px; }
-  .services .about__read-more-btn {
-    position: relative;
-    background-color: inherit;
-    border: none;
-    font-family: 'TT Lakes';
-    padding-left: 25px;
-    margin-left: 8px;
-    margin-bottom: 16px;
-    cursor: pointer; }
-    .services .about__read-more-btn:hover {
-      color: #41f6d7;
-      transition: color 0.5s; }
-    .services .about__read-more-btn::before {
-      content: '';
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      left: 0;
-      top: 3px;
-      background: url(./static/arrow.svg) no-repeat; }
+    .services .about__post {
+      margin: 0 16px; }
+    .services .about__text {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 16px;
+      height: 80px;
+      overflow: hidden; }
+      .services .about__text p {
+        margin-bottom: 16px; }
+    .services .about__text--read-more {
+      height: auto; }
+    .services .about__read-more-btn {
+      position: relative;
+      background-color: inherit;
+      border: none;
+      font-family: 'TT Lakes';
+      padding-left: 25px;
+      margin-left: 8px;
+      margin-bottom: 16px;
+      cursor: pointer; }
+      .services .about__read-more-btn:hover {
+        color: #41f6d7;
+        transition: color 0.5s; }
+      .services .about__read-more-btn::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 3px;
+        background: url(./static/arrow.svg) no-repeat; }
   .services .about__read-more-btn.about__read-more-btn--open::before {
     transform: rotate(180deg);
     top: -10px;
@@ -437,11 +437,11 @@ template {
       margin-left: 15px; }
       .services .about__text {
         line-height: 20px;
-        height: 135px;
         margin-right: 48px;
-        overflow: hidden; }
+        height: 155px; }
       .services .about__text--read-more {
-        height: 250px; }
+        height: auto;
+        overflow: visible; }
       .services .about__image {
         max-width: 360px;
         height: auto;
@@ -468,8 +468,11 @@ template {
       height: auto;
       margin-right: 28px; }
     .services .about__text {
+      height: 160px;
+      margin-right: 36px; }
+    .services .about__text--read-more {
       height: auto;
-      margin-right: 36px; } }
+      overflow: visible; } }
 
 @font-face {
   font-family: 'TT Lakes';

@@ -94,59 +94,59 @@
   &__link {
     text-decoration: none;
     color: $gray;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: -0.2px;
   }
 
-  &__about {
+  .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
 
-  .about__post {
-    margin: 0 16px;
-  }
+    &__post {
+      margin: 0 16px;
+    }
 
-  .about__text {
-    font-size: 14px;
-    line-height: 20px;
-    height: 95px;
-    overflow: hidden;
-    margin-bottom: 16px;
-
-    p {
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
       margin-bottom: 16px;
-    }
-  }
+      height: 80px;
+      overflow: hidden;
 
-  .about__text--read-more {
-    height: 260px;
-  }
-
-  .about__read-more-btn {
-    position: relative;
-    background-color: inherit;
-    border: none;
-    font-family: 'TT Lakes';
-    padding-left: 25px;
-    margin-left: 8px;
-    margin-bottom: 16px;
-    cursor: pointer;
-
-    &:hover {
-      color: $turquoise;
-      transition: color 0.5s;
+      p {
+        margin-bottom: 16px;
+      }
     }
 
-    &::before {
-      content: '';
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      left: 0;
-      top: 3px;
-      background: url(../img/icon/arrow.svg) no-repeat;
+    &__text--read-more {
+      height: auto;
+    }
+
+    &__read-more-btn {
+      position: relative;
+      background-color: inherit;
+      border: none;
+      font-family: 'TT Lakes';
+      padding-left: 25px;
+      margin-left: 8px;
+      margin-bottom: 16px;
+      cursor: pointer;
+
+      &:hover {
+        color: $turquoise;
+        transition: color 0.5s;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        top: 3px;
+        background: url(../img/icon/arrow.svg) no-repeat;
+      }
     }
   }
 
@@ -182,15 +182,14 @@
 
       &__text {
         line-height: 20px;
-        height: 135px;
         margin-right: 48px;
-        overflow: hidden;
+        height: 155px;
       }
 
       &__text--read-more {
-        height: 250px;
+        height: auto;
+        overflow: visible;
       }
-
       &__image {
         max-width: 360px;
         height: auto;
@@ -235,8 +234,13 @@
     }
 
     .about__text {
-      height: auto;
+      height: 160px;
       margin-right: 36px;
+    }
+
+    .about__text--read-more {
+      height: auto;
+      overflow: visible;
     }
   }
 }
