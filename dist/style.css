@@ -1183,6 +1183,8 @@ template {
     margin-bottom: 16px;
     border: 1px solid #eaeaea;
     border-radius: 8px; }
+    .feedback__input:focus {
+      outline-color: #41f6d7; }
   .feedback__textarea {
     border: 1px solid #eaeaea;
     border-radius: 8px;
@@ -1193,6 +1195,8 @@ template {
     letter-spacing: -0.2px;
     margin-bottom: 16px;
     resize: none; }
+    .feedback__textarea:focus {
+      outline-color: #41f6d7; }
   .feedback__text {
     font-size: 14px;
     line-height: 16px;
@@ -1262,6 +1266,8 @@ template {
     margin-bottom: 16px;
     border: 1px solid #eaeaea;
     border-radius: 8px; }
+    .callback__input:focus {
+      outline-color: #41f6d7; }
   .callback__text {
     font-size: 14px;
     line-height: 16px;

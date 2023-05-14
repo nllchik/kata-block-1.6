@@ -44,6 +44,9 @@
     margin-bottom: 16px;
     border: 1px solid $light_gray;
     border-radius: 8px;
+    &:focus {
+      outline-color: $turquoise;
+    }
   }
   &__text {
     font-size: 14px;
