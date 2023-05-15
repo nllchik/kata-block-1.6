@@ -130,6 +130,7 @@ for (let i = 0; i < burgerLinks.length; i++) {
     for (let j = 0; j < burgerLinks.length; j++) {
       if (i !== j) {
         burgerLinks[j].classList.remove('burger-main__item--active')
+        toggleBodyLock()
       }
     }
     burgerLinks[i].classList.add('burger-main__item--active')
