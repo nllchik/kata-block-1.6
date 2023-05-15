@@ -104,10 +104,10 @@ function toggleBodyLock() {
 //----------------------------------------------------------------------------------------------------------//
 
 //--------------------------------Отвечает за открытие/закрытие menu Burger-----------------------------------
-let btnBurgerOpen = document.querySelector('.menu-burger')
-let btnBurgerClose = document.querySelector('.burger-header__btn--close')
-let burgerMenu = document.querySelector('.burger')
-let blurBurger = document.querySelector('.blur-burger-menu')
+const btnBurgerOpen = document.querySelector('.menu-burger')
+const btnBurgerClose = document.querySelector('.burger-header__btn--close')
+const burgerMenu = document.querySelector('.burger')
+const blurBurger = document.querySelector('.blur-burger-menu')
 
 btnBurgerOpen.addEventListener('click', toggleBurger)
 btnBurgerClose.addEventListener('click', toggleBurger)
@@ -121,7 +121,7 @@ function toggleBurger() {
 //----------------------------------------------------------------------------------------------------------//
 
 //------------------Обработчик событий при нажатии на элементы в меню Burger-----------------------------------
-let burgerLinks = body.querySelectorAll('.burger-main__item')
+const burgerLinks = body.querySelectorAll('.burger-main__item')
 
 for (let i = 0; i < burgerLinks.length; i++) {
   burgerLinks[i].addEventListener('click', function () {
@@ -138,10 +138,10 @@ for (let i = 0; i < burgerLinks.length; i++) {
 //----------------------------------------------------------------------------------------------------------//
 
 //--------------------Отвечает за открытие/закрытие Feedback menu---------------------------------------------
-let btnFeedbackOpen = document.querySelectorAll('.button--massage')
-let btnFeedbackClose = document.querySelector('.feedback__btn-close')
-let feedbackMenu = document.querySelector('.feedback')
-let blurFeedback = document.querySelector('.blur-feedback-menu')
+const btnFeedbackOpen = document.querySelectorAll('.button--massage')
+const btnFeedbackClose = document.querySelector('.feedback__btn-close')
+const feedbackMenu = document.querySelector('.feedback')
+const blurFeedback = document.querySelector('.blur-feedback-menu')
 
 for (let i = 0; i < btnFeedbackOpen.length; i++) {
   btnFeedbackOpen[i].addEventListener('click', toggleFeedback)
@@ -164,10 +164,10 @@ for (let i = 0; i < btnFeedbackOpen.length; i++) {
 //----------------------------------------------------------------------------------------------------------//
 
 //--------------------Отвечает за открытие/закрытие Feedback menu-----------------------------------------------
-let btnCallbackOpen = document.querySelectorAll('.button--phone')
-let btnCallbackClose = document.querySelector('.callback__button-close')
-let callBackMenu = document.querySelector('.callback')
-let blurCallback = document.querySelector('.blur-callback-menu')
+const btnCallbackOpen = document.querySelectorAll('.button--phone')
+const btnCallbackClose = document.querySelector('.callback__button-close')
+const callBackMenu = document.querySelector('.callback')
+const blurCallback = document.querySelector('.blur-callback-menu')
 
 for (let i = 0; i < btnCallbackOpen.length; i++) {
   btnCallbackOpen[i].addEventListener('click', toggleCallback)
