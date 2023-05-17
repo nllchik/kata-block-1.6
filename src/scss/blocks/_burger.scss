@@ -1,6 +1,6 @@
 .burger {
   height: 100%;
-  width: 100%;
+  width: 320px;
   position: fixed;
   z-index: 10;
   background: $white;
@@ -175,7 +175,7 @@
 @media (min-width: 768px) {
   .burger {
     height: 100%;
-    max-width: 320px;
+    width: 360px;
     box-shadow: -1px 0px 2px rgba(69, 79, 126, 0.02),
       8px 0px 26px rgba(14, 24, 80, 0.2);
   }

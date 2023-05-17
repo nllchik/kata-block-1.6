@@ -1,6 +1,6 @@
 .feedback {
   height: 100%;
-  width: 100%;
+  width: 320px;
   position: fixed;
   z-index: 12;
   background: $white;
@@ -81,6 +81,7 @@
 
 @media (min-width: 768px) {
   .feedback {
+    width: 440px;
     &__wrapper {
       overflow: auto;
       padding: 47px 32px 75px 32px;
